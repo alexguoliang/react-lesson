@@ -1,8 +1,13 @@
 import React from 'react';
 import ReactDom from 'react-dom';
+import { CountProvider } from './components/CountProvider'
 import App from './App'
 
+
 ReactDom.render(
-    <App />,
+    <CountProvider>
+        <App />
+    </CountProvider>
+    ,
     document.querySelector('#root')
 )
